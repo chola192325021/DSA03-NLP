@@ -4,7 +4,7 @@ import re
 
 text = input("Enter the Text:")
 
-# Match at the beginning
+
 match_result = re.match(r"My", text)
 
 if match_result:
@@ -12,7 +12,7 @@ if match_result:
 else:
     print("No match found at the beginning.")
 
-# Search for email
+
 email = re.search(r'\b[\w.-]+@[\w.-]+\.\w+\b', text)
 
 if email:
@@ -20,7 +20,7 @@ if email:
 else:
     print("Email not found.")
 
-# Search for phone number
+
 phone = re.search(r'\b\d{10}\b', text)
 
 if phone:
